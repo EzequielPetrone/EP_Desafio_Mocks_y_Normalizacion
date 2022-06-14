@@ -1,0 +1,22 @@
+{{#each productos}}
+  <tr class="align-middle">
+    <th scope="row">
+      {{this.id}}
+    </th>
+    <td>
+      {{this.title}}
+    </td>
+    <td>
+      $
+      {{this.price}}
+    </td>
+    <td>
+      <img
+        style="height: 4rem"
+        class="mh-100"
+        src="{{this.thumbnail}}"
+        alt="{{this.title}}"
+      />
+    </td>
+  </tr>
+{{/each}}
